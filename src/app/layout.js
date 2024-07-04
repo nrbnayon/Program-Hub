@@ -8,7 +8,7 @@ const poppins = Poppins({
 
 export const metadata = {
   title: "Program Hub",
-  description: "Your Program, Your Community",
+  description: "Program Hub is web application that allows users to browse and view details of a specific program. This application is user-friendly, visually appealing, and follow modern UI/UX principles.",
 };
 
 export default function RootLayout({ children }) {

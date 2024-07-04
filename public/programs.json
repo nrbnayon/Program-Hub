@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "title": "Full Web Development",
+    "description": "Learn full-stack web development with hands-on projects.",
+    "duration": "6 months",
+    "location": "Online",
+    "deadline": "August 15, 2024",
+    "banner": "https://i.ibb.co/1J7LF7C/c1.jpg"
+  },
+  {
+    "id": "2",
+    "title": "Python for Data Science",
+    "description": "Master data science with Python, from basics to advanced techniques.",
+    "duration": "4 months",
+    "location": "Online",
+    "deadline": "September 10, 2024",
+    "banner": "https://i.ibb.co/Q9M1WNm/c4.jpg"
+  },
+  {
+    "id": "3",
+    "title": "Digital Marketing",
+    "description": "Gain expertise in digital marketing strategies and tools.",
+    "duration": "3 months",
+    "location": "Online",
+    "deadline": "October 5, 2024",
+    "banner": "https://i.ibb.co/98xrQTZ/c3.jpg"
+  },
+  {
+    "id": "4",
+    "title": "Graphic Design",
+    "description": "Learn graphic design principles and techniques to create stunning visuals.",
+    "duration": "5 months",
+    "location": "Online",
+    "deadline": "November 20, 2024",
+    "banner": "https://i.ibb.co/JnKcVCC/c5.jpg"
+  }
+]
