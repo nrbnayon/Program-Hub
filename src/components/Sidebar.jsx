@@ -8,7 +8,6 @@ const Sidebar = () => {
   const [programs, setPrograms] = useState([]);
 
   useEffect(() => {
-    // Fetch programs data
     fetch("/programs.json")
       .then((response) => response.json())
       .then((data) => {
@@ -18,7 +17,6 @@ const Sidebar = () => {
         console.error("Error fetching programs:", error);
       });
 
-    // Fetch sidebar data
     fetch("/sidebarData.json")
       .then((response) => response.json())
       .then((data) => {
@@ -29,13 +27,12 @@ const Sidebar = () => {
       });
   }, []);
 
-  // Filter upcoming events that are not in the programs list
   const filteredEvents = sidebarData.upcomingEvents.filter(
     (event) => !programs.some((program) => program.title === event.title)
   );
 
   return (
-    <aside className="w-64 bg-gray-100 p-4 hidden md:block">
+    <aside className="w-full md:w-64 p-4 ">
       <h2 className="text-xl font-semibold mb-4 text-gray-800 border-b pb-2">
         Upcoming Events
       </h2>

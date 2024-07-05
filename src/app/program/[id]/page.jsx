@@ -3,11 +3,16 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { useParams } from "next/navigation";
+import {
+  FaCheckCircle,
+  FaExclamationTriangle,
+  FaSignInAlt,
+  FaTimesCircle,
+} from "react-icons/fa";
 
 const ProgramDetailsPage = () => {
   const { id } = useParams();
   const [program, setProgram] = useState(null);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -35,7 +40,7 @@ const ProgramDetailsPage = () => {
   }, [id]);
 
   const handleRegister = () => {
-    if (isLoggedIn) {
+    if (program.isLoggedIn) {
       if (program.registrationStatus === "Not Registered") {
         alert("You are now registered for this program!");
       } else {
@@ -87,7 +92,7 @@ const ProgramDetailsPage = () => {
         </div>
 
         <div className="bg-white p-6 rounded-lg shadow-lg mb-6">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 text-center">
             Program Details
           </h2>
           <div className="space-y-6">
@@ -128,26 +133,34 @@ const ProgramDetailsPage = () => {
               </ul>
             </div>
             <div className="w-full flex items-end justify-center">
-              <button
-                onClick={handleRegister}
-                className={`mt-4 py-2 px-6 rounded-lg text-white font-semibold transition-transform transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 ${
-                  isLoggedIn
-                    ? program.registrationStatus === "Registered"
-                      ? "bg-green-500 hover:bg-green-600 focus:ring-green-300"
-                      : program.registrationStatus === "Not Registered"
-                      ? "bg-blue-500 hover:bg-blue-600 focus:ring-blue-300"
-                      : "bg-gray-500 hover:bg-gray-600 focus:ring-gray-300"
-                    : "bg-blue-500 hover:bg-blue-600 focus:ring-blue-300"
-                }`}
-              >
-                {isLoggedIn
-                  ? program.registrationStatus === "Registered"
-                    ? "Already Registered"
-                    : program.registrationStatus === "Not Registered"
-                    ? "Register Now"
-                    : "Pending Registration"
-                  : "Login to Enroll"}
-              </button>
+              <div className="flex flex-col items-center">
+                {program.isLoggedIn ? (
+                  program.registrationStatus === "Registered" ? (
+                    <p className="text-green-600 font-semibold flex items-center">
+                      <FaCheckCircle className="mr-2" />
+                      You are already registered for this program.
+                    </p>
+                  ) : program.registrationStatus === "Pending" ? (
+                    <p className="text-yellow-600 font-semibold flex items-center">
+                      <FaExclamationTriangle className="mr-2" />
+                      Registration is pending.
+                    </p>
+                  ) : (
+                    <button
+                      onClick={handleRegister}
+                      className="px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition flex items-center"
+                    >
+                      <FaSignInAlt className="mr-2" />
+                      Register Now
+                    </button>
+                  )
+                ) : (
+                  <p className="text-red-600 font-semibold flex items-center">
+                    <FaTimesCircle className="mr-2" />
+                    Please log in to register.
+                  </p>
+                )}
+              </div>
             </div>
           </div>
         </div>

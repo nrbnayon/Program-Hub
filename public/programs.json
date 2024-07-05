@@ -22,7 +22,8 @@
       "Willingness to learn and work on coding projects.",
       "A computer with internet access."
     ],
-    "registrationStatus": "Pending"
+    "registrationStatus": "Pending",
+    "isLoggedIn": true
   },
   {
     "id": "2",
@@ -47,7 +48,8 @@
       "Familiarity with statistics and data analysis.",
       "A computer with internet access."
     ],
-    "registrationStatus": "Not Registered"
+    "registrationStatus": "Not Registered",
+    "isLoggedIn": true
   },
   {
     "id": "3",
@@ -72,7 +74,8 @@
       "Interest in digital marketing tools and strategies.",
       "A computer with internet access."
     ],
-    "registrationStatus": "Registered"
+    "registrationStatus": "Registered",
+    "isLoggedIn": true
   },
   {
     "id": "4",
@@ -97,6 +100,7 @@
       "Access to graphic design software (e.g., Adobe Creative Suite).",
       "A computer with internet access."
     ],
-    "registrationStatus": "Pending"
+    "registrationStatus": "Pending",
+    "isLoggedIn": false
   }
 ]

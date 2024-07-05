@@ -1,5 +1,3 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import ProgramCard from "./program/page";
 import ProgramOverview from "./../components/ProgramOverview";
 import Sidebar from "@/components/Sidebar";
@@ -9,8 +7,7 @@ export default function Home() {
     <main className="max-w-7xl mx-auto overflow-x-auto">
       <div className="min-h-screen">
         <ProgramOverview />
-        <div className="flex">
-          <Sidebar />
+        <div>
           <ProgramCard />
         </div>
       </div>
