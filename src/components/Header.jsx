@@ -73,8 +73,8 @@ const Header = () => {
             <Image
               src={Logo}
               alt="Logo"
-              width={50}
-              height={50}
+              width={40}
+              height={40}
               className="rounded-full object-cover"
             />
           </Link>
@@ -120,7 +120,7 @@ const Header = () => {
             aria-label="User menu"
             className="btn btn-ghost btn-circle border-purple-400 avatar flex items-center justify-center"
           >
-            <FaUser size={24} />
+            <FaUser size={20} />
           </button>
           <ul
             tabIndex={0}
