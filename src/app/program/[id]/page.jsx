@@ -64,16 +64,16 @@ const ProgramDetailsPage = () => {
               src={program.banner}
               alt={program.title}
               layout="fill"
-              objectFit="cover"
+              // objectFit="cover"
               className="transition-transform duration-500 transform hover:scale-105"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent flex flex-col justify-center items-center p-6 text-center">
             <div className="bg-slate-400 rounded-md opacity-90 p-3">
-              <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
+              <h1 className="text-3xl md:text-4xl font-extrabold text-black mb-4">
                 {program.title}
               </h1>
-              <p className="text-base md:text-lg text-gray-200 mb-6">
+              <p className="text-base md:text-lg text-black mb-6">
                 {program.description}
               </p>
               <div className="bg-white bg-opacity-80 p-4 rounded-lg shadow-md space-y-2">

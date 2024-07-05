@@ -31,14 +31,14 @@ const ProgramCard = () => {
             {programs.map((program) => (
               <div
                 key={program.id}
-                className="relative bg-white rounded-lg shadow-lg overflow-hidden"
+                className="relative bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl"
               >
                 <div className="relative h-40">
                   <Image
                     src={program.banner}
                     alt={program.title}
                     layout="fill"
-                    objectFit="cover"
+                    className="transition-transform duration-300 ease-in-out hover:scale-110"
                   />
                 </div>
                 <div className="p-6">
@@ -46,7 +46,7 @@ const ProgramCard = () => {
                   <p className="text-gray-700 mb-4">{program.description}</p>
                   <Link
                     href={`/program/${program.id}`}
-                    className="bg-blue-500 text-white hover:underline btn"
+                    className="bg-blue-500 text-white hover:underline btn hover:btn-info"
                   >
                     View Details
                   </Link>
