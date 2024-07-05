@@ -17,7 +17,7 @@ const Header = () => {
   };
 
   return (
-    <header className="navbar bg-[#3a577e] border-b-2 border-info rounded-b-md shadow-lg sticky top-0 z-50 max-w-7xl mx-auto text-white">
+    <header className="navbar bg-[#3a577e] border-b-2 border-info rounded-b-md shadow-lg sticky top-0 z-50 max-w-7xl mx-auto text-white py-0">
       <div className="navbar-start flex items-center">
         <div className="dropdown lg:hidden">
           <button tabIndex={0} className="btn btn-ghost" aria-label="Open menu">
@@ -73,8 +73,8 @@ const Header = () => {
             <Image
               src={Logo}
               alt="Logo"
-              width={40}
-              height={40}
+              width={50}
+              height={50}
               className="rounded-full object-cover"
             />
           </Link>
@@ -118,9 +118,9 @@ const Header = () => {
           <button
             tabIndex={0}
             aria-label="User menu"
-            className="btn btn-ghost btn-circle border-purple-400 avatar flex items-center justify-center"
+            className="btn btn-ghost btn-md btn-circle border-purple-400 avatar flex items-center justify-center"
           >
-            <FaUser size={20} />
+            <FaUser size={24} />
           </button>
           <ul
             tabIndex={0}
