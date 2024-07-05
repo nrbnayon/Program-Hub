@@ -1,11 +1,11 @@
-import Logo from "../../../public/logo.jpeg";
+import Logo from "../../public/logo.jpeg";
 import Image from "next/image";
 import Link from "next/link";
 import { CiSearch } from "react-icons/ci";
 
 const Header = () => {
   return (
-    <div className="navbar bg-base-100 border-b shadow-lg fixed top-0">
+    <div className="navbar bg-base-100 border-b shadow-lg sticky top-0 z-50 max-w-7xl mx-auto">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -38,7 +38,7 @@ const Header = () => {
             </li>
             <li>
               <Link
-                href="/programs"
+                href="/program"
                 className="text-gray-700 hover:text-blue-600 transition-colors duration-300"
               >
                 Programs
@@ -84,7 +84,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              href="/programs"
+              href="/program"
               className="text-gray-700 hover:text-blue-600 transition-colors duration-300"
             >
               Programs

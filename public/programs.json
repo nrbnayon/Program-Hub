@@ -6,7 +6,23 @@
     "duration": "6 months",
     "location": "Online",
     "deadline": "August 15, 2024",
-    "banner": "https://i.ibb.co/1J7LF7C/c1.jpg"
+    "banner": "https://i.ibb.co/1J7LF7C/c1.jpg",
+    "objectives": [
+      "Understand front-end technologies such as HTML, CSS, and JavaScript.",
+      "Learn back-end development with Node.js and Express.js.",
+      "Work with databases like MongoDB to build a full-stack application."
+    ],
+    "benefits": [
+      "Gain practical experience with real-world projects.",
+      "Build a complete portfolio to showcase your skills.",
+      "Receive a certificate upon completion."
+    ],
+    "requirements": [
+      "Basic knowledge of HTML and CSS.",
+      "Willingness to learn and work on coding projects.",
+      "A computer with internet access."
+    ],
+    "registrationStatus": "Pending"
   },
   {
     "id": "2",
@@ -15,7 +31,23 @@
     "duration": "4 months",
     "location": "Online",
     "deadline": "September 10, 2024",
-    "banner": "https://i.ibb.co/Q9M1WNm/c4.jpg"
+    "banner": "https://i.ibb.co/Q9M1WNm/c4.jpg",
+    "objectives": [
+      "Learn data analysis and visualization with Python.",
+      "Understand machine learning algorithms and their applications.",
+      "Apply data science techniques to real-world datasets."
+    ],
+    "benefits": [
+      "Develop skills in Python for data analysis and machine learning.",
+      "Work with popular data science libraries like pandas and scikit-learn.",
+      "Access to exclusive workshops and webinars."
+    ],
+    "requirements": [
+      "Basic knowledge of Python programming.",
+      "Familiarity with statistics and data analysis.",
+      "A computer with internet access."
+    ],
+    "registrationStatus": "Not Registered"
   },
   {
     "id": "3",
@@ -24,7 +56,23 @@
     "duration": "3 months",
     "location": "Online",
     "deadline": "October 5, 2024",
-    "banner": "https://i.ibb.co/98xrQTZ/c3.jpg"
+    "banner": "https://i.ibb.co/98xrQTZ/c3.jpg",
+    "objectives": [
+      "Understand the fundamentals of digital marketing.",
+      "Learn about SEO, SEM, and social media marketing.",
+      "Develop and execute effective digital marketing campaigns."
+    ],
+    "benefits": [
+      "Acquire skills to drive traffic and generate leads.",
+      "Learn from industry experts with real-world experience.",
+      "Receive a certificate of completion."
+    ],
+    "requirements": [
+      "Basic understanding of marketing concepts.",
+      "Interest in digital marketing tools and strategies.",
+      "A computer with internet access."
+    ],
+    "registrationStatus": "Registered"
   },
   {
     "id": "4",
@@ -33,6 +81,22 @@
     "duration": "5 months",
     "location": "Online",
     "deadline": "November 20, 2024",
-    "banner": "https://i.ibb.co/JnKcVCC/c5.jpg"
+    "banner": "https://i.ibb.co/JnKcVCC/c5.jpg",
+    "objectives": [
+      "Understand design principles and color theory.",
+      "Learn to use graphic design tools like Adobe Photoshop and Illustrator.",
+      "Create and present professional design projects."
+    ],
+    "benefits": [
+      "Build a strong foundation in graphic design.",
+      "Develop a portfolio of design work.",
+      "Receive personalized feedback on your designs."
+    ],
+    "requirements": [
+      "Basic knowledge of design principles.",
+      "Access to graphic design software (e.g., Adobe Creative Suite).",
+      "A computer with internet access."
+    ],
+    "registrationStatus": "Pending"
   }
 ]

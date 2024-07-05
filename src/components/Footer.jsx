@@ -13,7 +13,7 @@ import {
 import { IoIosArrowUp } from "react-icons/io";
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-4 px-6 flex flex-col items-center">
+    <footer className="bg-gray-800 text-white py-4 px-6 flex flex-col items-center max-w-7xl mx-auto">
       <div className="flex space-x-4 mb-4">
         <Link href="/about">About Us</Link>
         <Link href="/contact">Contact</Link>

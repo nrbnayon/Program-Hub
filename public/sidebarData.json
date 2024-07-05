@@ -1,0 +1,18 @@
+{
+  "upcomingEvents": [
+    {
+      "id": "1",
+      "title": "Web Development Bootcamp",
+      "date": "August 20, 2024",
+      "description": "Join our bootcamp for a deep dive into web development.",
+      "link": "/events/web-development-bootcamp"
+    },
+    {
+      "id": "2",
+      "title": "Data Science Webinar",
+      "date": "September 15, 2024",
+      "description": "Attend our webinar on the latest trends in data science.",
+      "link": "/events/data-science-webinar"
+    }
+  ]
+}
